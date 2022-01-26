@@ -1,0 +1,13 @@
+graphql:
+  packages:
+    - "pawfinder"
+  introspection:
+    enabled: true
+  playground:
+    enabled: true
+configuration:
+  token:
+    petfinderclient:
+      baseurl: "https://api.petfinder.com/v2/"
+      id: "insert client id here"
+      secret: "insert client secret here"
