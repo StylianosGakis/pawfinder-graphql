@@ -57,7 +57,7 @@ the client secret and ID with your own generated from the
     gcloud builds submit --pack=image=gcr.io/$PROJECT_ID/pawfinder-graphql
     ```
 
-6. Deploy on Google Cloud Run:d
+6. Deploy on Google Cloud Run:
    ```
    gcloud run deploy pawfinder-graphql \
      --image=gcr.io/$PROJECT_ID/pawfinder-graphql \
@@ -69,5 +69,8 @@ the client secret and ID with your own generated from the
      --no-use-http2 \
      --cpu-throttling
    ```
+   These are some sane defaults. Make your own configuration at google cloud console.
 
-Project inspired by [PeopleInSpace GraphQL Server](https://github.com/joreilly/PeopleInSpaceGraphQLServer)
+   Cloud Run > Create Service > Select container image and configuration > Top right "Show command line"
+
+### Project inspired by [PeopleInSpace GraphQL Server](https://github.com/joreilly/PeopleInSpaceGraphQLServer)
