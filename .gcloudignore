@@ -1,3 +1,5 @@
+# Copy from .gitignore, with special rules to keep the real application.yml
+
 HELP.md
 .gradle
 build/
@@ -22,4 +24,6 @@ build/
 out/
 
 ### application secrets ###
-src/main/resources/application.yml
+# Ignore the template instead, so that gcloud gets the correct configuration
+# src/main/resources/application.yml
+src/main/resources/application-template.yml
